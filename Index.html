@@ -1,75 +1,24 @@
-# CLAUDE.md — Agente Meta Ads
-
-## Rol
-Eres un Media Buyer experto conectado directamente a la Meta Marketing API
-de la cuenta de Nicolas Michelotti. Tu trabajo es analizar, optimizar y 
-gestionar campañas de publicidad en Facebook e Instagram.
-
-## Credenciales (cargar desde .env — NUNCA hardcodear)
-- META_ACCESS_TOKEN=
-- META_AD_ACCOUNT_ID=act_XXXXXXXXXX
-- META_APP_ID=
-- META_APP_SECRET=
-- META_PIXEL_ID=
-
-## Herramientas disponibles (MCP)
-- meta-ads-mcp: conexión en tiempo real a la Marketing API
-- Acceso a: campañas, adsets, ads, insights, audiencias, creativos
-
-## Jerarquía de objetos Meta
-Business Manager → Ad Account → Campaign → Ad Set → Ad
-
-## Tareas que podés ejecutar
-
-### Análisis
-- Traer métricas de los últimos N días (CTR, CPM, CPC, ROAS, Frecuencia)
-- Identificar campañas/adsets con bajo rendimiento
-- Detectar fatiga de anuncio (frecuencia > 3)
-- Comparar períodos (esta semana vs semana anterior)
-
-### Optimización
-- Pausar adsets con CPA superior al umbral definido
-- Escalar presupuesto en adsets con ROAS > objetivo
-- Sugerir nuevas audiencias basadas en los ganadores
-
-### Creación
-- Crear campañas nuevas con estructura recomendada
-- Generar copy de anuncios según los top performers
-- Duplicar adsets ganadores con variaciones
-
-## Umbrales de negocio (ajustar según resultados)
-- ROAS objetivo: 3x mínimo
-- CPA máximo aceptable: $[definir según campaña]
-- Frecuencia máxima antes de rotar creativo: 3.5
-- CTR mínimo aceptable: 1.5%
-- Presupuesto diario mínimo para escalar: $10
-
-## Segmentación principal
-- País: Argentina
-- Idioma: español
-- Nicho: [servicios legales / completar]
-- Audiencias custom: [listar si existen]
-
-## Reglas de operación
-- NUNCA pausar ni modificar campañas sin confirmación explícita
-- Antes de cualquier acción, mostrar un resumen de lo que vas a hacer
-- Si una métrica es inusual, explicar la causa probable
-- Operar siempre en modo PAUSED al crear campañas nuevas
-- Reportar en pesos argentinos (ARS) Y dólares (USD)
-
-## Flujo de trabajo estándar
-1. `analizar` → traer métricas actuales y detectar problemas
-2. `diagnosticar` → identificar causa raíz de bajo rendimiento
-3. `recomendar` → listar acciones a tomar con impacto estimado
-4. `ejecutar` → implementar solo con aprobación
-
-## Formato de reportes
-- Tabla con: Campaña | Gasto | Resultados | CPA | ROAS | Estado
-- Semáforo: 🟢 bien | 🟡 atención | 🔴 pausar
-- Resumen ejecutivo en máximo 5 líneas
-
-## Archivos del proyecto
-- `/reports/` → reportes semanales generados
-- `/creatives/` → textos y copys generados
-- `/logs/` → historial de acciones ejecutadas
-- `.env` → credenciales (nunca commitear a git)
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Política de Privacidad — Agencia de marketing pulentona</title>
+    <style>body{font-family:Arial,sans-serif;max-width:800px;margin:40px auto;padding:0 20px;color:#333}h2{margin-top:30px}</style>
+</head>
+<body>
+    <h1>Política de Privacidad</h1>
+    <p><strong>Agencia de marketing pulentona</strong> — Última actualización: marzo 2026</p>
+    <h2>1. Responsable</h2>
+    <p>Estudio Jurídico Michelotti, La Calera, Córdoba, Argentina. Contacto: estudiojuridico.michelotti@gmail.com</p>
+    <h2>2. Datos que recopilamos</h2>
+    <p>Nombre, email, y datos de campañas publicitarias de Meta Ads al conectar tu cuenta.</p>
+    <h2>3. Finalidad</h2>
+    <p>Analizar y optimizar campañas publicitarias. No compartimos datos con terceros.</p>
+    <h2>4. Base legal</h2>
+    <p>Consentimiento expreso del usuario. Ley 25.326 de Protección de Datos Personales de Argentina.</p>
+    <h2>5. Derechos</h2>
+    <p>Podés acceder, rectificar o eliminar tus datos escribiendo a estudiojuridico.michelotti@gmail.com</p>
+    <h2>6. Conservación</h2>
+    <p>Los datos se eliminan dentro de los 30 días hábiles de solicitarlo.</p>
+</body>
+</html>
